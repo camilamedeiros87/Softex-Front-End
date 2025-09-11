@@ -1,0 +1,8 @@
+const frutas = ["banana", "açaí", "maçã"]
+
+frutas.forEach((fruta, index)=>{
+console.log(fruta);
+console.log(index); 
+})
+
+frutas.forEach
