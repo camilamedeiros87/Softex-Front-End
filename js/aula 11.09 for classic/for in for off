@@ -1,0 +1,21 @@
+const frutas = ["maçã - 0", "banana - 1", "uva - 2"];
+
+for (let i = 0; i < frutas.length; i++) {
+    console.log(`Fruta ${i}: ${frutas[i]}`);
+    //Fruta 0: maçã
+    //Fruta 1: banana
+    //Fruta 2: uva
+}
+for (let fruta of frutas) {
+    console.log("Eu gosto de " + fruta);
+}
+const frutasObj = {
+    nome: "laranja",
+    tipo: "cítrica",
+    valor: 5
+};
+
+for (chave in frutasObj) {
+    console.log(chave + " - "+ frutasObj[chave]);
+}
+
