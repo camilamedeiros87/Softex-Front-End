@@ -7,14 +7,41 @@ array: retorna o array completo
 
 const users = [
 {
-"name": Ana Souza", "age": 28,
-"contact": "+55 11 91234-5678", "city": "Salvador"
+"name": "Ana Souza", "age": 28,
+"contact": "+55 11 91234-5678", "city": "São Paulo"
+},
+{
+    "name": "Carlos Mendes", "age": 15,
+    "contact": "+55 11 99876-5432", "city": "São Paulo" 
+},
+{
+    "name": "Fernanda Lima", "age": 12,
+    "contact": "+55 31 99876-5432", "city": "Belo Horizonte"
+},
+
+{
+    "name": "Mariana Costa", "age": 25,
+    "contact": "+55 71 98877-6654", "city": "Salvador"
 }
 
-user.forEach(function(item, index,array){
+users.forEach(function(item, index,array){
 
 console.log(item)
+if(item.age>18){
+    console.log('O usuário $(item.name), é maior de idade')
+}
 console.log(index)
 console.log(array)
 
+})]
+
+const contagemPorCidade = users.reduce((acc, user) => {
+    //acc[user.city] = (acc[user.city] || 0 ) +1;
+    
+    if (!acc[user.city]) {
+        acc[user.city] = 0;
+    } 
+    acc[user.city] += 1;
+
+    return acc;
 })
