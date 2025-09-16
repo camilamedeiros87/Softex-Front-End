@@ -45,3 +45,18 @@ const contagemPorCidade = users.reduce((acc, user) => {
 
     return acc;
 })
+
+function saudacao(nome){
+    const mensagem = 'olá, ${nome}'
+
+function mostrarSaudacao(){
+console.log(mensagem);
+
+}
+return mostrarSaudacao;
+
+
+}
+
+const olaHeitor = saudacao("Heitor");
+olaHeitor();
