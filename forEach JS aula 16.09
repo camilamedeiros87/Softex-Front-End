@@ -1,0 +1,20 @@
+/*ForEach(item, index, array)
+
+item: Dados/Informações contidos na posição atual do array
+index: numero da posição, começa por 0
+array: retorna o array completo
+*/
+
+const users = [
+{
+"name": Ana Souza", "age": 28,
+"contact": "+55 11 91234-5678", "city": "Salvador"
+}
+
+user.forEach(function(item, index,array){
+
+console.log(item)
+console.log(index)
+console.log(array)
+
+})
