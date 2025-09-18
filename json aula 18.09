@@ -1,0 +1,12 @@
+JSON.parse
+//parser: string json -> obj js
+//stringify: obj js -> string json
+
+const usuraio = {   //obj js
+    id: 1,
+    nome: "Maria",
+    ativo: true
+}
+
+const jsonString = JSON.stringify(usuraio);
+console.log(usuario)
